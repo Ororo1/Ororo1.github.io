@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'Olivevillage';
+    src: url('/OliveVillage-Regular.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'Break';
+    src: url('/Break.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'Hendagan';
+    src: url('/Hendangan.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'Philosopher';
+    src: url('/Philosopher-Regular.ttf') format('truetype')
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* Other styles for your website */
+
+
+.container {
+    max-width: 800px;
+    margin: 250px auto;
+    padding: 20px;
+}
+
+.form-container {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+/* Define styles for the background dots */
+.background-dots {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.background-dots::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, #000 1px, transparent 1px);
+    background-size: 25px 25px; /* Adjust size of dots */
+}
+
+/* Additional styles for the sign-in page */
+.signin-container {
+    position: relative;
+    z-index: 1; /* Ensure the sign-in form is above the background dots */
+}
+
+/* Additional styles for the home page */
+.home-container {
+    position: relative;
+    z-index: 1; /* Ensure the home content is above the background dots */
+}
+
+
+button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.area {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F0F0F0;
+    border-radius: 25px;
+    height: fit-content;
+    margin-top: 50px; /* Reduced margin top for smaller screens */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.video {
+    border-radius: 2.5%;
+    width: 100%; /* Set video width to 100% for smaller screens */
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .area {
+        width: 90%; /* Adjusted width for smaller screens */
+        padding: 10px; /* Reduced padding for smaller screens */
+        margin-top: 20px; /* Reduced margin top for smaller screens */
+    }
+}
+.hbd{
+    font-family: Olivevillage;
+    font-size: 50px;
+}
+h4{
+    font-family: Philosopher;
+}
+.footer{
+    font-family: Hendagan;
+    text-align: right;
+}
+
+/*
+.msg {
+    display: flex;
+}
+
+.left,
+.right {
+    flex: 1;
+}
+
+.clear {
+    clear: both;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 100%; /* Adjust the width as needed */
+  /*  float: left; /* Set to float left to keep them side by side */
+  /*  box-sizing: border-box;
+    word-wrap: break-word;
+}
+
